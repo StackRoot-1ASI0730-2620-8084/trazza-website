@@ -55,21 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
    
-    document.querySelectorAll('.toggle-container').forEach((container) => {
-        const buttons = container.querySelectorAll('.toggle-btn');
-        buttons.forEach((button) => {
-            button.addEventListener('click', () => {
-                buttons.forEach((btn) => btn.classList.remove('active'));
-                button.classList.add('active');
-            });
-        });
+    const WEB_APP_URL = 'https://main.d32sst26l9v5eu.amplifyapp.com';
+    document.querySelectorAll('[data-app-path]').forEach((link) => {
+        link.href = `${WEB_APP_URL}${link.dataset.appPath}`;
     });
-
-    
-    const role = new URLSearchParams(window.location.search).get('role');
-    if (role === 'merchant') {
-        document.getElementById('btn-emprendedor')?.click();
-    }
 
     
     const slider = document.querySelector('[data-slider]');
