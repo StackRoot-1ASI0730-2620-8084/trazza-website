@@ -760,9 +760,9 @@ footer[id] {
    ========================================================= */
 .plans-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 440px));
+    grid-template-columns: repeat(3, minmax(0, 380px));
     justify-content: center;
-    gap: 32px;
+    gap: 28px;
 }
 .plan-card {
     display: flex;
@@ -1194,6 +1194,9 @@ html[lang="es"] .nav-links { gap: 22px; }
 
     .steps-grid { gap: 16px; }
     .step-card { padding: 24px; }
+
+    .plans-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .plan-card { padding: 24px; }
 
     .footer-grid {
         grid-template-columns: 1fr 1fr 1fr;
