@@ -154,8 +154,7 @@
         'video.eyebrow': 'SOBRE EL PRODUCTO',
         'video.title': 'Mira Trazza en acción',
         'video.play': 'Reproducir el video sobre el producto',
-        'video.caption': 'Video sobre el producto · 2:30',
-
+        'video.caption': 'Video sobre el producto',
         
         'final.title': 'Llena tu viaje de retorno o envía tu mercadería hoy',
         'final.sub': 'Crea tu cuenta gratis en minutos.',
